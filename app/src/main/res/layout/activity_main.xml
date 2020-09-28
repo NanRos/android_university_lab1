@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--
+FrameLayout is designed to block out an area on the screen to display a single item.
+Generally, FrameLayout should be used to hold a single child view, because it can be difficult to
+organize child views in a way that's scalable to different screen sizes without the children
+overlapping each other. You can, however, add multiple children to a FrameLayout and control
+their position within the FrameLayout by assigning gravity to each child,
+using the android:layout_gravity attribute.
+-->
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
